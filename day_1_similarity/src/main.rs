@@ -5,7 +5,7 @@ use std::io::{BufRead, BufReader};
 fn main() -> std::io::Result<()> {
     println!("Hello, world!");
 
-    let file = File::open("../input.txt")?;
+    let file = File::open("input.txt")?;
     let reader = BufReader::new(file);
     let mut left_side:Vec<i32> = vec![];
 
